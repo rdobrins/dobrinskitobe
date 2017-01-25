@@ -1,0 +1,31 @@
+<br /><br />
+
+<div class="col-xs-6 col-md-3 text-center" ng-repeat="photo in photos track by photo.id">
+  <img class="pointer highlightImage"
+       data-toggle="modal"
+       data-target="#myModal"
+       ng-click="photoModal(photo)"
+       style="max-width: 100%; max-height:20em; padding-top:1em; padding-bottom:1em;" src={{photo.src}}>
+</div>
+
+<br /><br />
+
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div ng-click="nextPicture()" class="modal-body pointer" arrow-key="arrowKeys()">
+        <img style="max-width: 100%; max-height:100%;" src="{{modalPhoto.src}}">
+      </div>
+      <div class="modal-footer">
+        <div class="nextPrevBtn col-xs-6 pointer" ng-click="prevPicture()"><span class="center-block googlefont1">Previous</span></div>
+        <div class="nextPrevBtn col-xs-6 pointer" ng-click="nextPicture()"><span class="center-block googlefont1">Next</span></div>
+      </div>
+    </div>
+
+  </div>
+</div>

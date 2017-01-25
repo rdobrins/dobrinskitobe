@@ -1,0 +1,213 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ */
+
+ // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  margin-left: -20px;
+  margin-right: -20px;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.btn-xl {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 1.5em;
+    border: 2px solid #000;
+}
+
+.btn-xl:hover {
+    text-decoration: none;
+}
+
+.highlightImage:hover {
+  opacity: 0.6;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+.nextPrevBtn {
+  display: flex;
+  height: 3em;
+  font-size: 1.25em;
+  align-items: center;
+}
+
+.nextPrevBtn:hover {
+  background-color:#F9F9F9;
+}
+
+.background-grey {
+    background-color:#F9F9F9;
+}
+
+.letterCircle {
+    border-radius: 50%;
+    width: 1.5em;
+    font-size: 1.5em;
+    border: 0.05em solid #A9A9A9;
+}
+
+.letterCircle span {
+    text-align: center;
+    line-height: 1.5em;
+    display: block;
+}
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+}
+
+.staticMap-container{
+    position: relative;
+    max-width: 100%;
+}
+
+.iframe-container > *{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.flash {
+  padding-top: .5em;
+  height: 3em;
+  color: #9FA8A3;
+}
+
+.googlefont1 {
+  font-family: 'Playfair Display SC', serif;
+}
+
+.googlefont2 {
+  font-family: 'Great Vibes', cursive;
+}
+
+.googlefont3 {
+  font-family: 'Cormorant', serif;
+}
+
+.breaker {
+  width: 100%;
+  height: 1em;
+}
+
+.header {
+  width: 100%;
+  height: 15em;
+}
+
+.bannerImg {
+  max-height: 100%;
+  max-width: 100%;
+  border-bottom: .15em solid #001133;
+}
+
+.padding {
+  padding: 1em;
+}
+
+.pageContents {
+  width: 100%;
+  min-height: 35em;
+}
+
+.black {
+  color: #000;
+}
+
+.white {
+  color: #FFF;
+}
+
+.navBar {
+  background-color: #FFF;
+  height: 3em;
+  border-top: .15em solid #001133;
+  border-bottom: .15em solid #001133;
+}
+
+.footerBar {
+  bottom: 0;
+  position:relative;
+  background-color: #FFF;
+  height: 5em;
+  overflow: hidden;
+  border-top: .15em solid #001133;
+}
+
+.footerPiece {
+  color: #9FA8A3;
+  display: inline-block;
+  height: 100%;
+  font-size: .9em;
+}
+
+.navPiece {
+  color: #000;
+  font-size: 1.25em;
+  padding-top: .3em;
+  display: inline-block;
+  height: 3em;
+}
+
+.dateDisplay {
+  color: #000;
+  font-size: 2em;
+  padding-top: .3em;
+  display: inline-block;
+  height: 2.5em;
+}
+
+.navPiece:hover {
+  color: #9FA8A3;
+}
+
+.pad-top {
+  padding-top: 1.5em;
+}
+
+.pad-bot {
+  padding-bottom: 5em;
+}
+
+.less-pad-bot {
+  padding-bottom: 2em;
+}
+
+.more-pad-top {
+  padding-top: 5em;
+}
