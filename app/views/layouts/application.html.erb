@@ -16,50 +16,56 @@
 
   </head>
   <body ng-app="dobrinskiToBe">
-    <a href="#!/home">
-      <div class="autoplay">
-        <div>
-          <img class="bannerImg highlightImage" src="/banner5.jpg">
-        </div>
-        <div>
-          <img class="bannerImg highlightImage" src="/banner1.jpg">
-        </div>
-        <div>
-          <img class="bannerImg highlightImage" src="/banner2.jpg">
-        </div>
-        <div>
-          <img class="bannerImg highlightImage" src="/banner3.jpg">
-        </div>
-        <div>
-          <img class="bannerImg highlightImage" src="/banner4.jpg">
+    <div class="container">
+      <div class="row">
+        <a href="#!/home">
+          <div class="autoplay">
+            <div>
+              <img class="bannerImg highlightImage" src="/banner5.jpg">
+            </div>
+            <div>
+              <img class="bannerImg highlightImage" src="/banner1.jpg">
+            </div>
+            <div>
+              <img class="bannerImg highlightImage" src="/banner2.jpg">
+            </div>
+            <div>
+              <img class="bannerImg highlightImage" src="/banner3.jpg">
+            </div>
+            <div>
+              <img class="bannerImg highlightImage" src="/banner4.jpg">
+            </div>
+          </div>
+          <div class="col-xs-12 dateDisplay googlefont2 text-center">
+            <p class="text-center" style="font-size: 1.5em">August 26, 2017</p>
+          </div>
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 navBar googlefont1">
+          <a href="#!/photos">
+            <div class="col-xs-3 navPiece text-center">
+              <p>Photos<p>
+            </div>
+          </a>
+          <a href="#!/events">
+            <div class="col-xs-3 navPiece text-center">
+              <p>Events<p>
+            </div>
+          </a>
+          <a href="#!/travel">
+            <div class="col-xs-3 navPiece text-center">
+              <p>Travel<p>
+            </div>
+          </a>
+          <a href="#!/registry">
+            <div class="col-xs-3 navPiece text-center">
+              <p>Registry<p>
+            </div>
+          </a>
         </div>
       </div>
-      <div class="col-xs-12 dateDisplay googlefont2 text-center">
-        <p style="font-size: 1.5em">August 26, 2017</p>
-      </div>
-    </a>
-    <div class="col-xs-12 navBar googlefont1">
-      <a href="#!/photos">
-        <div class="col-xs-3 navPiece text-center">
-          <p>Photos<p>
-        </div>
-      </a>
-      <a href="#!/events">
-        <div class="col-xs-3 navPiece text-center">
-          <p>Events<p>
-        </div>
-      </a>
-      <a href="#!/travel">
-        <div class="col-xs-3 navPiece text-center">
-          <p>Travel<p>
-        </div>
-      </a>
-      <a href="#!/registry">
-        <div class="col-xs-3 navPiece text-center">
-          <p>Registry<p>
-        </div>
-      </a>
-    </div>
+
 
     <%- flash.each do |key, value| -%>
     <div class="text-center flash flash-<%= key %>">
@@ -73,21 +79,25 @@
 
     <br />
 
-    <div class="col-xs-12 footerBar">
-      <div class="col-xs-3 footerPiece">
-      </div>
-      <div class="col-xs-6 footerPiece text-center">
-        <div class="pad-top">
-          <p class="googlefont1" style="font-size:.6em;">Ryan&nbsp; &&nbsp; Meghan</p>
+    <div class="row">
+      <div class="col-xs-12 footerBar">
+        <div class="col-xs-3 footerPiece">
+        </div>
+        <div class="col-xs-6 footerPiece text-center">
+          <div class="pad-top">
+            <p class="googlefont1" style="font-size:.6em;">Ryan&nbsp; &&nbsp; Meghan</p>
+          </div>
+        </div>
+        <div class="col-xs-3 footerPiece">
         </div>
       </div>
-      <div class="col-xs-3 footerPiece">
-      </div>
     </div>
+  </div>
 
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
 
   </body>
 </html>
